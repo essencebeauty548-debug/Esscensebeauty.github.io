@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Belleza y Uñas</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff; /* Fondo blanco */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Estilos del header (centrado) */
+        header {
+            background-color: #F8B6D2; /* Rosa sofisticado */
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header img {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        /* Contenido principal */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #F8B6D2; /* Rosa sofisticado */
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #D998B1; /* Rosa más oscuro */
+        }
+
+        /* Sección de Precios */
+        #prices {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #prices h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .price-card {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background-color: #F8B6D2; /* Rosa sofisticado */
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 1; /* Mantenerlo visible */
+        }
+
+        .price-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .price-card h3 {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 15px;
+        }
+
+        .price-card p {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-top: 5px;
+        }
+
+        /* Cuadro de contacto morado claro */
+        .contact-box {
+            background-color: #C1A2F2; /* Morado claro */
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-box p {
+            font-size: 1.1rem;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        /* Rectángulo debajo del cuadro de contacto */
+        .bottom-rectangle {
+            background-color: #D4C2E1; /* Un morado más claro */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .bottom-rectangle p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Sección de fotos */
+        #photos {
+            padding: 40px;
+            text-align: center;
+            background-color: #f4f4f4; /* Fondo gris suave */
+        }
+
+        #photos h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .photo-card {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .photo-card p {
+            padding: 10px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header con logo y nombre centrado -->
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/1402428849559568416/1404849039052374181/F3B3350E-8161-42B9-A43B-45C654EDD4D6.png?ex=689caf1f&is=689b5d9f&hm=ad4a2dd0edd1f3e974a1888cdfb53862acf0d44c770090c895bc8037e9e0a6a8&" alt="Logo Tienda Belleza">
+        <h1>Bienvenidos a Essence Beauty</h1>
+    </header>
+
+    <!-- Sección principal -->
+    <div class="main-container">
+        <div class="content">
+            <h2>Transforma tus manos con estilo</h2>
+            <p>Ofrecemos servicios de limpieza, manicura y pedicura de alta calidad para que tus uñas luzcan espectaculares. ¡Visítanos y siéntete como nueva!</p>
+            <a href="#prices" class="cta-button">Ofrecemos servicios a domicilio a todas partes de Pariaguán</a>
+        </div>
+    </div>
+
+    <!-- Sección de Precios -->
+    <div id="prices">
+        <h2>Precios de Nuestros Servicios</h2>
+
+        <!-- Solo mostrar Servicio 1 -->
+        <div class="price-card">
+            <img src="https://media.discordapp.net/attachments/1402428849559568416/1404857254871695480/d6bc8371-4b2d-46c7-9c98-7418301a9a19.jpg?ex=689cb6c6&is=689b6546&hm=ea114ff21b1f7d64d3922d84bf32d95c145ab7058c09c0cd46c995038849b8c5&" alt="Servicio 1">
+            <h3>Servicio 1</h3>
+            <p>$10</p>
+        </div>
+    </div>
+
+    <!-- Cuadro de contacto -->
+    <div class="contact-box">
+        <p>Gmail: essencebeauty548@gmail.com</p>
+        <p>Mensaje: 04123944867 / 0424870751</p>
+    </div>
+
+    <!-- Rectángulo debajo del cuadro de contacto -->
+    <div class="bottom-rectangle">
+        <p>¡Contáctanos para más información y reservas!</p>
+    </div>
+
+    <!-- Sección de Fotos -->
+    <div id="photos">
+        <h2>Nuestros trabajos.</h2>
+
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="https://media.discordapp.net/attachments/1402428849559568416/1404859135966842900/image0.jpg?ex=689cb887&is=689b6707&hm=9011426900bb31f64d5a4db60ffc4d713d9d845baf4407885a07b844460562d5&=&format=webp&width=1324&height=1656" alt="Imagen 1">
+                <p>Hacemos Depilación, pigmentación de cejas y cejas por punto.</p>
+            </div>
+            <div class="photo-card">
+                <img src="https://media.discordapp.net/attachments/1402428849559568416/1404859260030160916/image0.jpg?ex=689cb8a4&is=689b6724&hm=e8099d01e2f236854c98c50bd8c0c15214b964e247588b95d8389ad829986753&=&format=webp&width=1242&height=1656" alt="Imagen 2">
+                <p>También Keratina y Hidratación.</p>
+            </div>
+            <div class="photo-card">
+                <img src="https://media.discordapp.net/attachments/1402428849559568416/1404861195298799779/IMG_4010.png?ex=689cba72&is=689b68f2&hm=a77604ff300ec5af6d5e4eb3a797b62c293d11b1dc8ae8eaa31bc9361b239425&=&format=webp&quality=lossless&width=1236&height=1656" alt="Imagen 3">
+                <p>Ajustamos tu pelo, sea cual sea.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Tienda de Belleza y Uñas Essence Beauty.</p>
+    </footer>
+
+</body>
+</html>
+
